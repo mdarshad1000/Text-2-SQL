@@ -25,7 +25,7 @@ Visit `http://0.0.0.0:8501` in your browser.
 
 ## 💡 How to Use
 
-1. Select an AI model (GPT-4, TinyLlama, or Gemini)
+1. Select an AI model (GPT-4, Llama3.2:latest, or Gemini)
 2. Type your question (e.g., "Show me all sales from last month")
 3. Click "Generate Results"
 4. View your data in tables or charts
@@ -45,7 +45,7 @@ Handles GPT-4 integration.
 - `generate_sql_from_nl(db_schema, nl_query)`: Generates SQL using OpenAI API
 
 #### `OllamaQueryGenerator`
-Manages TinyLlama integration.
+Manages Llama3.2:latest integration.
 - `__init__(model, sys_prompt, user_prompt)`: Sets up Ollama configuration
 - `generate_sql_from_nl(db_schema, nl_query)`: Generates SQL using Ollama
 
@@ -65,7 +65,7 @@ Manages database operations.
 
 1. **Initialization**
    - App starts and creates `DatabaseExecutor` instance
-   - Initializes AI models (GPT-4, TinyLlama, Gemini)
+   - Initializes AI models (GPT-4, Llama3.2, Gemini)
 
 2. **User Interaction**
    - User selects AI model

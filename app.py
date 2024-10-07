@@ -16,7 +16,7 @@ if 'db' not in st.session_state:
 if 'models' not in st.session_state:
     st.session_state.models = {
         '🌟 GPT-4': OpenAIQueryGenerator(model='gpt-4'),
-        '🔮 TinyLlama': OllamaQueryGenerator(model='tinyllama'),
+        '🔮 llama3.2': OllamaQueryGenerator(model='llama3.2:latest'),
         '🤖 Gemini': GeminiQueryGenerator()
     }
 
