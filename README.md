@@ -21,7 +21,7 @@ GEMINI_API_KEY=your_key_here
 docker compose up -d
 ```
 
-Visit `http://localhost:8501` in your browser.
+Visit `http://0.0.0.0:8501` in your browser.
 
 ## 💡 How to Use
 
