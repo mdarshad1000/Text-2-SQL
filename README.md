@@ -26,6 +26,7 @@ Visit `http://0.0.0.0:8501` in your browser.
 ## 💡 How to Use
 
 1. Select an AI model (GPT-4, Llama3.2:latest, or Gemini)
+{{ If you want to use the Llama3.2 model, ensure the Ollama server is running. }}
 2. Type your question (e.g., "Show me all sales from last month")
 3. Click "Generate Results"
 4. View your data in tables or charts
