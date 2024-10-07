@@ -6,8 +6,8 @@ A Streamlit app that converts English questions into SQL queries using AI models
 
 1. Clone and navigate to the project:
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone git@github.com:mdarshad1000/Text-2-SQL.git>
+cd git@github.com:mdarshad1000/Text-2-SQL.git
 ```
 
 2. Create `.env` file with your API keys:
@@ -94,11 +94,3 @@ If something's not working:
 - Uses Chinook sample database (digital media store data)
 - Supports basic data visualization
 - Downloads available in CSV format
-
-## 🤝 Contributing
-
-Issues and pull requests welcome! Please see CONTRIBUTING.md for guidelines.
-
-## 📄 License
-
-MIT License - see LICENSE file
