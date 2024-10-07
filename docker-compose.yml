@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  db:
+    image: postgres
+    container_name: chinook_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: chinook
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./Chinook_PostgreSql.sql:/docker-entrypoint-initdb.d/Chinook_PostgreSql.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Streamlit Application
+  app:
+    build: .
+    container_name: streamlit_app
+    environment:
+      - HOST=db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=chinook
+      - PORT=5432
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    ports:
+      - "8501:8501"
+    depends_on:
+      db:
+        condition: service_healthy
