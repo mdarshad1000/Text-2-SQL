@@ -33,6 +33,33 @@ Visit `http://0.0.0.0:8501` in your browser.
 
 ## 🏗️ Code Structure & Documentation
 
+
+### Folder Structure
+```
+.
+├── Chinook_PostgreSql.sql
+├── Dockerfile
+├── README.md
+├── app.py
+├── config.py
+├── docker-compose.yml
+├── llm_integration.py
+├── query_executor.py
+├── requirements.txt
+└── utils.py
+```
+
+`Chinook_PostgreSql.sql`: SQL script to create database schema
+`Dockerfile`: Docker file to build Docker image
+`README.md`: This README file
+`app.py`: Main application file
+`config.py`: Configuration file for LLM models
+`docker-compose.yml`: Docker Compose file to run Docker image
+`llm_integration.py`: Abstract base class for LLM integrations
+`query_executor.py`: Database executor class
+`requirements.txt`: Python dependencies
+```
+
 ### Classes
 
 #### `LLMQueryGenerator` (Abstract Base Class)
