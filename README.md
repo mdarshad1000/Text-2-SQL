@@ -6,7 +6,7 @@ A Streamlit app that converts English questions into SQL queries using AI models
 
 1. Clone and navigate to the project:
 ```bash
-git clone git@github.com:mdarshad1000/Text-2-SQL.git>
+git clone git@github.com:mdarshad1000/Text-2-SQL.git
 cd git@github.com:mdarshad1000/Text-2-SQL.git
 ```
 
