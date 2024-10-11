@@ -36,20 +36,8 @@ Visit `http://0.0.0.0:8501` in your browser.
 
 
 ### Folder Structure
-```
-.
-├── Chinook_PostgreSql.sql
-├── Dockerfile
-├── README.md
-├── app.py
-├── config.py
-├── docker-compose.yml
-├── llm_integration.py
-├── query_executor.py
-├── requirements.txt
-└── utils.py
-```
 
+```
 `Chinook_PostgreSql.sql`: SQL script to create database schema
 `Dockerfile`: Docker file to build Docker image
 `README.md`: This README file
